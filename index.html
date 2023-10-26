@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d69e29ec83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="city" id="city">ville</div>
+        </header>
+        <section>
+            <div class="infos" id="weathericon"></div>
+            
+            <div class="infostemp" id="temp">Temp</div>
+            <div class="infosdesc" id="description">Description</div>
+        </section>
+        <footer>
+            <div class="addinfos">
+                <div>
+                    <p>Ressenti</p>
+                </div>
+                <div class="addinfostemp">
+                    <i class="fa-solid fa-temperature-high"></i>
+                    <div class="addvalue" id="feellike">15°C</div>
+                </div>
+            </div>
+            <hr>
+            <div class="addinfos">
+                <div>
+                    <p>Humidité</p>
+                </div>
+                <div class="addinfoshumid">
+                    <i class="fa-solid fa-fire-flame-simple"></i>
+                    <div class="addvalue" id="humidity">80%</div>
+                </div>
+            </div>        
+        </footer>
+    </div>
+    <div class="verifmaj" id="miseajour" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
