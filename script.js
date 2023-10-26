@@ -1,6 +1,6 @@
 //Constantes globales
 const apiKey = '17cf1933e00b0b55212bfcb60cea28c4';
-const urlJson = "json/essouvert.json"; //URL du json
+const urlJson = "json/essouvert.json"; //URL du json de la ville
 const timeUpdate = 60; //Mise a jour donnees en minutes
 
 // Variables globales
@@ -50,7 +50,6 @@ function dataProcessing(jsonMeteo) {
     document.getElementById("feellike").innerHTML = parseFloat(jsonMeteo.current.feels_like).toFixed(1)+"°C"; //affichage Temperature
     document.getElementById("humidity").innerHTML = parseFloat(jsonMeteo.current.humidity).toFixed(1)+"%"; //affichage Temperature
 
-
     //Chargement icone de temps
     let iconCode = jsonMeteo.current.weather[0].icon;
     let weatherIconDiv = document.getElementById("weathericon");
@@ -63,7 +62,6 @@ function dataProcessing(jsonMeteo) {
     iconImg.src = iconUrl;
     weatherIconDiv.appendChild(iconImg);
 }
-
 //fonction de verification et affichage des heures de mise à jour
 function infoMaj() {
 const maintenant = new Date();
